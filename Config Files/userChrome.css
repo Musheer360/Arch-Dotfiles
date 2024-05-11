@@ -1,0 +1,24 @@
+/* Remove close button */
+
+.titlebar-buttonbox-container{ display:none }
+
+
+/* Add space before first tab  */
+
+#TabsToolbar {
+    margin-left: 2.4px  !important;
+}
+
+
+/* tab top border roundness */
+
+#TabsToolbar .tabs-newtab-button,
+#TabsToolbar .tabbrowser-tab,
+#TabsToolbar .tabbrowser-tab .tab-stack,
+#TabsToolbar .tabbrowser-tab .tab-background,
+#TabsToolbar .tabbrowser-tab .tab-content {
+   border-top-left-radius: 8px !important;
+   border-top-right-radius: 8px !important;
+   border-bottom-left-radius: 0px !important;
+   border-bottom-right-radius: 0px !important;
+}
