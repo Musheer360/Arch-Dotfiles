@@ -72,7 +72,7 @@ alias pc='$aurhelper -Sc' # remove unused cache
 alias po='$aurhelper -Qtdq | $aurhelper -Rns -' # remove unused packages, also try > $aurhelper -Qqd | $aurhelper -Rsu --print -
 alias vc='code' # gui code editor
 alias bl='xhost si:localuser:root && sudo bleachbit' # run bleachbit
-alias bl='sudo fstrim -v /' # run the trim command
+alias tr='sudo fstrim -v /' # run the trim command
 
 # Handy change dir shortcuts
 alias ..='cd ..'
