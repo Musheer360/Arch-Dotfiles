@@ -20,7 +20,7 @@
     "hyprland/workspaces",
     "hyprland/window",
     "custom/r_end",
-    "custom/padd"
+    "custom/padd",
   ],
   "modules-center": [
     "custom/padd",
@@ -28,7 +28,7 @@
     "idle_inhibitor",
     "clock",
     "custom/r_end",
-    "custom/padd"
+    "custom/padd",
   ],
   "modules-right": [
     "custom/padd",
@@ -57,13 +57,12 @@
     "custom/cliphist",
     "custom/power",
     "custom/r_end",
-    "custom/padd"
+    "custom/padd",
   ],
 
   // sourced from modules based on config.ctl //
 
   "hyprland/workspaces": {
-    "disable-scroll": true,
     "rotate": 0,
     "all-outputs": true,
     "active-only": false,
@@ -71,7 +70,7 @@
     "disable-scroll": false,
     "on-scroll-up": "hyprctl dispatch workspace -1",
     "on-scroll-down": "hyprctl dispatch workspace +1",
-    "persistent-workspaces": {}
+    "persistent-workspaces": {},
   },
 
   "hyprland/window": {
@@ -87,9 +86,9 @@
       "(.*) — Dolphin(.*)": " Files 󰉋 ",
       "(.*)Spotify(.*)": " Spotify 󰓇 ",
       "(.*)Steam(.*)": " Steam 󰓓 ",
-      "(.*)(.*)": "  "
+      "(.*)(.*)": "  ",
     },
-    "max-length": 1000
+    "max-length": 1000,
   },
 
   "idle_inhibitor": {
@@ -97,8 +96,8 @@
     "rotate": 0,
     "format-icons": {
       "activated": "󰥔",
-      "deactivated": ""
-    }
+      "deactivated": "",
+    },
   },
 
   "clock": {
@@ -114,16 +113,16 @@
       "format": {
         "months": "<span color='#ffead3'><b>{}</b></span>",
         "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
-        "today": "<span color='#ff6699'><b>{}</b></span>"
-      }
+        "today": "<span color='#ff6699'><b>{}</b></span>",
+      },
     },
     "actions": {
       "on-click-right": "mode",
       "on-click-forward": "tz_up",
       "on-click-backward": "tz_down",
       "on-scroll-up": "shift_up",
-      "on-scroll-down": "shift_down"
-    }
+      "on-scroll-down": "shift_down",
+    },
   },
 
   "cpu": {
@@ -131,25 +130,25 @@
     "format": "󰍛 {usage}% ",
     "rotate": 0,
     "format-alt": "{icon0}{icon1}{icon2}{icon3}",
-    "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"]
+    "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"],
   },
 
   "memory": {
     "states": {
       "c": 90, // critical
       "h": 60, // high
-      "m": 30 // medium
+      "m": 30, // medium
     },
     "interval": 30,
     "format": "󰾆 {percentage}% ",
     "rotate": 0,
-    "format-m": "󰾅 {used} GB ",
-    "format-h": "󰓅 {used} GB ",
-    "format-c": " {used} GB ",
-    "format-alt": "󰾆 {used} GB ",
+    "format-m": "󰾅 {percentage}% ",
+    "format-h": "󰓅 {percentage}% ",
+    "format-c": " {percentage}% ",
+    "format-alt": "󰾆 {percentage}% ",
     "max-length": 10,
     "tooltip": true,
-    "tooltip-format": "󰾆 {percentage}%\n {used:0.1f}GB/{total:0.1f}GB"
+    "tooltip-format": " {used:0.1f}GB/{total:0.1f}GB",
   },
 
   "custom/cpuinfo": {
@@ -159,7 +158,7 @@
     "rotate": 0,
     "interval": 5, // once every 5 seconds
     "tooltip": true,
-    "max-length": 1000
+    "max-length": 1000,
   },
 
   "custom/gpuinfo": {
@@ -170,7 +169,7 @@
     "interval": 5, // once every 5 seconds
     "tooltip": true,
     "max-length": 1000,
-    "on-click": "gpuinfo.sh --toggle"
+    "on-click": "gpuinfo.sh --toggle",
   },
 
   "custom/gpuinfo#amd": {
@@ -180,7 +179,7 @@
     "rotate": 0,
     "interval": 5, // once every 5 seconds
     "tooltip": true,
-    "max-length": 1000
+    "max-length": 1000,
   },
 
   "network": {
@@ -193,7 +192,7 @@
     "format-disconnected": "󰖪 ",
     "tooltip-format-disconnected": "Disconnected",
     "format-alt": "<span foreground='#99ffdd'> {bandwidthDownBytes}</span> <span foreground='#ffcc66'> {bandwidthUpBytes}</span>",
-    "interval": 2
+    "interval": 2,
   },
 
   "pulseaudio": {
@@ -213,8 +212,8 @@
       "phone": "",
       "portable": "",
       "car": "",
-      "default": ["", "", ""]
-    }
+      "default": ["", "", ""],
+    },
   },
 
   "pulseaudio#microphone": {
@@ -227,7 +226,7 @@
     "on-scroll-up": "volumecontrol.sh -i i",
     "on-scroll-down": "volumecontrol.sh -i d",
     "tooltip-format": "{format_source} {source_desc} // {source_volume}%",
-    "scroll-step": 5
+    "scroll-step": 5,
   },
 
   "custom/updates": {
@@ -238,19 +237,19 @@
     "on-click": "hyprctl dispatch exec 'systemupdate.sh up'",
     "interval": 86400, // once every day
     "tooltip": true,
-    "signal": 20
+    "signal": 20,
   },
 
   "custom/keybindhint": {
     "format": " ",
     "rotate": 0,
-    "on-click": "keybinds_hint.sh"
+    "on-click": "keybinds_hint.sh",
   },
 
   "tray": {
     "icon-size": 11,
     "rotate": 0,
-    "spacing": 10
+    "spacing": 10,
   },
 
   "custom/wallchange": {
@@ -261,7 +260,7 @@
     "on-click-right": "swwwallpaper.sh -p",
     "on-click-middle": "sleep 0.1 && swwwallselect.sh",
     "interval": 86400, // once every day
-    "tooltip": true
+    "tooltip": true,
   },
 
   "custom/theme": {
@@ -272,7 +271,7 @@
     "on-click-right": "themeswitch.sh -p",
     "on-click-middle": "sleep 0.1 && themeselect.sh",
     "interval": 86400, // once every day
-    "tooltip": true
+    "tooltip": true,
   },
 
   // "custom/wbar": {
@@ -294,7 +293,7 @@
     "on-click-right": "sleep 0.1 && cliphist.sh d",
     "on-click-middle": "sleep 0.1 && cliphist.sh w",
     "interval": 86400, // once every day
-    "tooltip": true
+    "tooltip": true,
   },
 
   "custom/power": {
@@ -304,7 +303,7 @@
     "on-click": "logoutlaunch.sh 2",
     "on-click-right": "logoutlaunch.sh 1",
     "interval": 86400, // once every day
-    "tooltip": true
+    "tooltip": true,
   },
 
   // modules for padding //
@@ -312,42 +311,42 @@
   "custom/l_end": {
     "format": " ",
     "interval": "once",
-    "tooltip": false
+    "tooltip": false,
   },
 
   "custom/r_end": {
     "format": " ",
     "interval": "once",
-    "tooltip": false
+    "tooltip": false,
   },
 
   "custom/sl_end": {
     "format": " ",
     "interval": "once",
-    "tooltip": false
+    "tooltip": false,
   },
 
   "custom/sr_end": {
     "format": " ",
     "interval": "once",
-    "tooltip": false
+    "tooltip": false,
   },
 
   "custom/rl_end": {
     "format": " ",
     "interval": "once",
-    "tooltip": false
+    "tooltip": false,
   },
 
   "custom/rr_end": {
     "format": " ",
     "interval": "once",
-    "tooltip": false
+    "tooltip": false,
   },
 
   "custom/padd": {
     "format": "  ",
     "interval": "once",
-    "tooltip": false
-  }
+    "tooltip": false,
+  },
 }
