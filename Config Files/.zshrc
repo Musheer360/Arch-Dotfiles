@@ -43,7 +43,7 @@ function in {
     for pkg in "${inPkg[@]}"; do
         if pacman -Si "${pkg}" &>/dev/null ; then
             arch+=("${pkg}")
-        else 
+        else
             aur+=("${pkg}")
         fi
     done
@@ -68,7 +68,7 @@ alias un='$aurhelper -Rns' # uninstall package
 alias up='$aurhelper -Syu' # update system/package/aur
 alias pl='$aurhelper -Qs' # list installed package
 alias pa='$aurhelper -Ss' # list availabe package
-alias pc='$aurhelper -Sc' # remove unused cache
+alias pc='$aurhelper -Sc --noconfirm' # remove unused cache
 alias po='$aurhelper -Qtdq | $aurhelper -Rns -' # remove unused packages, also try > $aurhelper -Qqd | $aurhelper -Rsu --print -
 alias vc='code' # gui code editor
 alias bl='xhost si:localuser:root && sudo bleachbit' # run bleachbit
