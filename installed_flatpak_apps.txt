@@ -1,0 +1,12 @@
+Flatseal	com.github.tchx84.Flatseal	2.3.0	stable	user
+WebCord	io.github.spacingbat3.webcord	4.10.2	stable	user
+TAP-plugins	org.freedesktop.LinuxAudio.Plugins.TAP	1.0.1	23.08	user
+SWH	org.freedesktop.LinuxAudio.Plugins.swh	0.4.17	23.08	user
+Freedesktop Platform	org.freedesktop.Platform	freedesktop-sdk-24.08.6	24.08	user
+Mesa	org.freedesktop.Platform.GL.default	24.2.6	24.08	user
+Mesa (Extra)	org.freedesktop.Platform.GL.default	24.2.6	24.08extra	user
+FFmpeg extension with extra codecs	org.freedesktop.Platform.ffmpeg-full		24.08	user
+openh264	org.freedesktop.Platform.openh264	2.4.1	2.4.1	user
+Freedesktop SDK	org.freedesktop.Sdk	freedesktop-sdk-24.08.6	24.08	user
+GNOME Application Platform version 47	org.gnome.Platform		47	user
+Catppuccin (Mocha) Gtk Theme	org.gtk.Gtk3theme.Catppuccin-Mocha		3.22	user
