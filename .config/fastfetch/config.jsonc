@@ -35,7 +35,7 @@
         {
             "type": "display",
             "key": "   Display",
-            "format": "{1}x{2} @ 144Hz [External]",
+            "format": "{1}x{2} @ 75Hz [External]",
             "keyColor": "green"
         },
         {
