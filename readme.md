@@ -4,10 +4,10 @@ These are my personal dotfiles for Arch Linux, designed to work as an extension 
 
 ## Screenshots
 
-![Screenshot 1](Preview/screenshot1.png)
+![Screenshot 1](Preview/241111_00h39m58s_screenshot.png)
 *Main desktop with custom waybar theme and terminal*
 
-![Screenshot 2](Preview/screenshot2.png)
+![Screenshot 2](Preview/241111_23h42m22s_screenshot.png)
 *System monitoring and customized applications*
 
 ## Important Note
