@@ -2,6 +2,14 @@
 
 These are my personal dotfiles for Arch Linux, designed to work as an extension of [HyprDots by Prasanthrangan](https://github.com/prasanthrangan/hyprdots). These configurations are specifically tailored to work with the Catppuccin Mocha theme.
 
+## Screenshots
+
+![Screenshot 1](Preview/screenshot1.png)
+*Main desktop with custom waybar theme and terminal*
+
+![Screenshot 2](Preview/screenshot2.png)
+*System monitoring and customized applications*
+
 ## Important Note
 
 These dotfiles should be applied **AFTER** installing HyprDots. They contain customizations and modifications that enhance and personalize the base HyprDots setup.
